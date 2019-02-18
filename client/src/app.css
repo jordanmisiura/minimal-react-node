@@ -1,0 +1,15 @@
+body {
+	background: #E8F5FD;
+	padding: 0px;
+	margin: 0px;
+}
+
+.header {
+	padding: 40px;
+	margin-bottom: 20px;
+	background: #08a0e9;
+}
+
+.apptitle {
+	padding-left: 100px;
+}
