@@ -4,7 +4,7 @@ import { Row, Col, Grid, Button, ControlLabel, FormControl } from 'react-bootstr
 import './app.css';
 
 import EnterNameComp from './enternamecomp';
-import MovieSelectionComp from './movieselectioncomp';
+import CompTwo from './comptwo';
 
 class App extends Component {
 
@@ -56,7 +56,7 @@ class App extends Component {
 						</div>
 					</Row>
 					<Row>
-						{this.state.nameString.length > 0 ? <MovieSelectionComp userName={this.state.nameString} /> : <EnterNameComp onNameChanged={this.onNameChanged.bind(this)}/>}
+						{this.state.nameString.length > 0 ? <CompTwo userName={this.state.nameString} /> : <EnterNameComp onNameChanged={this.onNameChanged.bind(this)}/>}
 					</Row>
 				</Grid>
 			</div>); 
