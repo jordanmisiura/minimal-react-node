@@ -4,7 +4,7 @@ const path = require('path');
 
 process.title = 'mayurApp';
 
-const PORT = 9888;
+const PORT = 8888;
 
 app.use(express.static(path.resolve(__dirname, '../client', 'build')));
 
