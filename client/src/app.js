@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Grid, Button, ControlLabel, FormControl } from 'react-bootstrap';
+import { Row, Grid } from 'react-bootstrap';
 
 import './app.css';
 
@@ -13,29 +13,6 @@ class App extends Component {
 		this.state = {
 			nameString: ""
 		};
-	}
-
-	componentDidMount() {
-		fetch('./api/movieimage')//'./test')
-		.then((response)=> {
-			if (response.status !== 200) {
-		        console.log('Looks like there was a problem. Status Code: ' +
-		          response.status);
-		        return;
-		      }
-
-		      // Examine the text in the response
-		      console.log("response is: ");
-		      console.log(response);
-		      console.log(response.headers.get('Content-Type'));
-
-		      response.json().then(function(data) {
-		        console.log(data);
-		      });
-		})
-		.catch((err)=> {
-			console.log("error from fetch");
-		})
 	}
 
 	onNameChanged(name) {
