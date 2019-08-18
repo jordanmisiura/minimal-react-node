@@ -2,7 +2,7 @@ const express = require('express');
 const app = express(); 
 const path = require('path');
 
-process.title = 'mayurApp';
+process.title = 'minimalnodeapp';
 
 const PORT = 8888;
 
